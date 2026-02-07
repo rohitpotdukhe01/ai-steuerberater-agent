@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SteuerPilot — AI Agents for German Tax Prep</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <span class="badge">Preparation only · No ELSTER submission</span>
+          <h1>SteuerPilot</h1>
+          <p class="subtitle">
+            An AI-agent system that helps people in Germany prepare their tax return with
+            confidence, clarity, and a complete deduction checklist.
+          </p>
+          <div class="cta-row">
+            <button class="primary" id="scrollToDemo">Try the demo</button>
+            <button class="ghost" id="scrollToDetails">How it differs</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-title">Why people use it</div>
+          <ul>
+            <li>Agent-guided intake that finds missing deductions</li>
+            <li>Evidence-first checklists to maximize refund readiness</li>
+            <li>Transparent preparation steps without submitting your tax return</li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="grid" id="details">
+        <div class="panel">
+          <h2>Difference vs Taxfix</h2>
+          <p>
+            Taxfix focuses on submission through ELSTER. SteuerPilot stays in preparation mode:
+            it helps you gather every relevant detail, create a deduction playbook, and hand over
+            a clean summary you can file yourself or with a tax advisor.
+          </p>
+        </div>
+        <div class="panel">
+          <h2>Difference vs ELSTER</h2>
+          <p>
+            ELSTER is the official filing portal. SteuerPilot is an AI co-pilot that organizes
+            your information, highlights overlooked categories, and builds a document checklist so
+            your ELSTER filing is faster and less error-prone.
+          </p>
+        </div>
+        <div class="panel">
+          <h2>Core differentiators</h2>
+          <ul>
+            <li>Multi-agent flow: intake → deduction scout → document coach → summary</li>
+            <li>Privacy-first: no submission, no credential collection</li>
+            <li>Explainable: every suggestion comes with questions and evidence needed</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="flow">
+        <h2>How the agent system works</h2>
+        <div class="flow-steps">
+          <div class="step">1. Capture profile and income context</div>
+          <div class="step">2. Scan every deduction category</div>
+          <div class="step">3. Build a document checklist</div>
+          <div class="step">4. Produce a prep-ready summary</div>
+        </div>
+      </section>
+
+      <section class="demo" id="demo">
+        <div class="demo-header">
+          <h2>Live demo</h2>
+          <p>Ask the assistant to build your deduction checklist. No tax filing, just prep.</p>
+        </div>
+        <div class="demo-body">
+          <div class="chat" id="chat"></div>
+          <form id="chatForm" class="chat-form">
+            <input
+              type="text"
+              id="messageInput"
+              placeholder="Example: I moved to Berlin in 2024 and work as an employee..."
+              autocomplete="off"
+            />
+            <button type="submit">Send</button>
+          </form>
+          <div class="demo-foot">
+            <span id="status">Checking API key...</span>
+            <span class="disclaimer">
+              This is a portfolio demo. Always verify with official sources or a tax advisor.
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel prep">
+        <h2>What you get out of it</h2>
+        <ul>
+          <li>Personalized deduction areas and evidence checklist</li>
+          <li>Clear list of missing information</li>
+          <li>Export-ready summary for ELSTER or your advisor</li>
+        </ul>
+      </section>
+
+      <footer>
+        Built with Google Agent ADK · Deployable on Replit · Demo only, no submissions
+      </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

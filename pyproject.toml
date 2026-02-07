@@ -6,6 +6,8 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
   "google-adk",
+  "fastapi>=0.110",
+  "uvicorn>=0.30",
 ]
 
 [project.optional-dependencies]
